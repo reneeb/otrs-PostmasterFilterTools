@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="1.0" init="Config">
+    <ConfigItem Name="PostMaster::PreFilterModule###00-SetCustomerInfo" Required="0" Valid="1">
+        <Description Translatable="1">Set several X-OTRS-CustomerUser-* headers.</Description>
+        <Group>PostmasterFilterTools</Group>
+        <SubGroup>Core::PostMaster</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::System::PostMaster::Filter::SetCustomerInfo</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>
